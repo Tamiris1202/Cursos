@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nacionalidade</title>
+</head>
+
+<body>
+  <h1>Sua Nacionalidade</h1>
+
+  <div>
+    <input type="text" name="Nome" id="nome" placeholder="Seu nome">
+  </div>
+  <div>
+    <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade">
+  </div>
+  <div class="res"></div>
+  <input type="button" name="enviar" value="enviar" id="enviar" onclick="calcular()">
+  <input type="button" name="mude a cor" value="mudar a cor" id="cor" onclick>
+
+
+  <script>
+    function calcular() {
+      var nome = document.querySelector("input#nome").value
+      var nacionalidade = document.querySelector("input#nacionalidade").value
+      var res = document.querySelector("div.res")
+      if (nacionalidade != "brasil") {
+        res.innerHTML = `<p>${nome} você é estrangeiro(a)</p>`
+      } else {
+        res.innerHTML = `<p> ${nome} você é brasileiro(a)</p>`
+      }
+    }
+
+
+
+    var botao = document.getElementById("cor");
+
+    var mudaracor = function () {
+      var corpo = document.body
+      var h1 = document.getElementsByTagName('h1')[0]
+      h1.style.color = "white"
+      corpo.style.background = "black"
+    }
+    var voltaracor = function () {
+      var body = document.body
+      var h = document.getElementsByTagName('h1')[0]
+      h.style.color = "black"
+      body.style.background = "white"
+    }
+    var cor = function () {
+      mudaracor()
+      voltaracor()
+    }
+    botao.onclick = cor;
+  </script>
+
+</body>
+
+</html>

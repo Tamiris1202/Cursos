@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(241, 202, 208);
+  font: normal 15pt arial;
+}
+header {
+  color: white;
+  text-align: center;
+}
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgb(163, 126, 142);
+}
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+div {
+  padding: 25px;
+}
+.botao {
+  background: rgb(231, 62, 91);
+  padding: 10px 25px;
+  margin-left: 25px;
+  border-radius: 15px;
+  border: 2px transparent solid;
+  transition: 0.4s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.botao:hover {
+  background-color: rgb(248, 218, 225);
+  border: 2px rgb(231, 62, 91) solid;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+}

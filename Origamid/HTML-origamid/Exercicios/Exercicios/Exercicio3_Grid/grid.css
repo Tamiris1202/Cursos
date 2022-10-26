@@ -1,0 +1,151 @@
+body {
+  font-family: "Open Sans";
+  margin: 0px;
+  display: grid;
+  background-color: #f7f7f7;
+  gap: 3.75rem;
+  justify-items: center;
+  margin-top: 3.75rem;
+}
+header {
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+}
+.bike {
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0rem;
+}
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+nav ol {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1.25rem;
+}
+li a {
+  color: black;
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  padding: 1rem 2.1875rem;
+  text-decoration: none;
+  border: solid transparent 2px;
+}
+a:hover {
+  border: solid red 2px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+}
+.introducao {
+  text-align: right;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 1.25rem;
+  justify-items: end;
+  position: relative;
+}
+.introducao::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  position: absolute;
+  top: 3.75rem;
+  right: -1.875rem;
+  transition: 2s;
+}
+.introducao h1::after {
+  content: "";
+  width: 10%;
+  background-color: transparent;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 66%;
+  transition: 0.8s;
+}
+.introducao h1:hover::after {
+  width: 100%;
+  background-color: blueviolet;
+  content: "";
+  height: 5px;
+  cursor: pointer;
+}
+
+.introdução-img .bike {
+  object-fit: cover;
+  height: 100%;
+}
+
+.botao {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e21;
+  border-radius: 4px;
+  padding: 1rem 1.875rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.botao:hover {
+  background-color: #7c1209;
+  border: none;
+}
+.subtitulo {
+  background-image: url(05-css-propriedades/0506-refatorar-exercicio/web-final/img/onda.svg);
+  font-size: 64px;
+  color: #c0bfbf;
+  text-align: right;
+  align-self: center;
+  padding: 2.5rem;
+}
+.vantagens {
+  background-color: white;
+  padding: 2.5rem;
+}
+.vantagens li:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.6rem 1.25rem;
+  padding: 1.25rem;
+  border-left: solid 4px transparent;
+}
+.vantagens-item:hover {
+  border-left: solid red 4px;
+}
+.vantagens-item p {
+  grid-column: 2;
+}
+footer {
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-color: red;
+  }
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
