@@ -22,7 +22,7 @@ var idade = 21;
 // e outra com seu sobrenome e some as mesmas
 var nome = 'Tamiris';
 var sobrenome = 'Alencar';
-var nomecompleto = `${nome} + ${sobrenome}`;
+var nomecompleto = `${nome} ${sobrenome}`;
 
 // Coloque a seguinte frase em uma variável: It's time
 var texto = "It\'s time";
